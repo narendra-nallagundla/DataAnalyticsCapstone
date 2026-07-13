@@ -1,0 +1,11 @@
+event_id,event_type,begin_date,end_date,state,county,wind_speed,hail_size,flood_depth,damage_property,damage_crops
+1001,Flood,5/14/2020,5/14/2020,Texas,Dallas,0,0,3.5,250000,0
+1002,Hail,4/21/2020,4/21/2020,Oklahoma,Tulsa,0,1.25,0,15000,5000
+1003,Thunderstorm Wind,6/10/2020,6/10/2020,Kansas,Johnson,65,0,0,80000,0
+1004,Flood,9/2/2021,9/3/2021,New York,Queens,0,0,4.2,500000,0
+1005,Hurricane,9/14/2019,9/15/2019,North Carolina,Carteret,90,0,0,1200000,10000
+1006,Flood,3/20/2018,3/20/2018,Texas,Harris,0,0,6.1,900000,0
+1007,Hail,5/1/2017,5/1/2017,Colorado,Denver,0,2,0,30000,0
+1008,Thunderstorm Wind,7/18/2016,7/18/2016,Nebraska,Douglas,70,0,0,45000,0
+1009,Flood,10/5/2015,10/6/2015,South Carolina,Richland,0,0,5,600000,0
+1010,Hurricane,10/29/2012,10/30/2012,New Jersey,Monmouth,85,0,0,2000000,50000
