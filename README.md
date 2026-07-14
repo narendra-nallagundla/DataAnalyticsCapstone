@@ -24,32 +24,7 @@ The project is designed to be **fully reproducible**, with all data, code, and n
 ---
 
 ## Repository Structure
-DataAnalyticsCapstone/
-│
-├── data/
-│   ├── raw/                # Raw NOAA, NFIP, ACS subsets (uploaded)
-│   └── processed/          # Cleaned, merged datasets (generated later)
-│
-├── notebooks/
-│   ├── 01_eda.ipynb        # Exploratory data analysis
-│   ├── 02_regression.ipynb # RQ1 & RQ2 modeling
-│   ├── 03_ml.ipynb         # RQ3 machine learning models
-│   └── 04_timeseries.ipynb # RQ4 trend analysis
-│
-├── src/
-│   ├── preprocess.py       # Data cleaning & merging
-│   ├── features.py         # Feature engineering
-│   ├── models.py           # ML training & evaluation
-│   └── utils.py            # Shared helper functions
-│
-├── figures/                # Exported charts, plots, tables
-│
-├── appendix/               # Supplementary materials
-│
-└── README.md               # Project documentation
-
-
-This structure follows best practices for academic and industry data science workflows.
+<img width="617" height="582" alt="image" src="https://github.com/user-attachments/assets/fcfc258a-272f-4848-a4b2-72636ec0bb48" />
 
 ---
 
@@ -96,7 +71,7 @@ The full datasets are large (hundreds of MB to several GB), so the README includ
   https://www.ncdc.noaa.gov/stormevents/
 
 - NFIP Claims (OpenFEMA):  
-  https://www.fema.gov/openfema-data-page/nfip-claims
+  [https://www.fema.gov/openfema-data-page/nfip-claims](https://www.census.gov/data/developers/data-sets/acs-5year.html)
 
 - ACS 5‑Year Estimates:  
   https://www.census.gov/data/developers/data-sets/acs-5year.html
@@ -113,6 +88,8 @@ To reproduce the project:
 4. Run preprocessing
 5. Run EDA, regression, ML, and time‑series notebooks in order
 
+---
+
 ## Research Questions (RQ1–RQ4)
 
 RQ1: Hazard intensity → severity
@@ -123,24 +100,28 @@ RQ3: ML classification of high severity
 
 RQ4: Severity trend over 20 years
 
+---
+
 ## Planned Outputs
 
-Cleaned & merged dataset
+- Cleaned & merged dataset
 
-Regression & moderated regression results
+- Regression & moderated regression results
 
-ML classification metrics (Accuracy, Precision, Recall, F1, ROC‑AUC)
+- ML classification metrics (Accuracy, Precision, Recall, F1, ROC‑AUC)
 
-SHAP feature importance plots
+- SHAP feature importance plots
 
-Time‑series trend charts
+- Time‑series trend charts
 
-Final PDF report 
+- Final PDF report 
+
+---
 
 ## License
 This project uses public datasets and is intended for academic use under QM640 guidelines.
 
 ## Acknowledgments
-Walsh College Faculty
-Mentor: Mr. Sridhar S
-NOAA, FEMA OpenFEMA, U.S. Census Bureau
+- Walsh College Faculty
+- Mentor: Mr. Sridhar S
+- NOAA, FEMA OpenFEMA, U.S. Census Bureau
