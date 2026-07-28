@@ -1,0 +1,8 @@
+Topic,Interpretation
+Dataset readiness,The integrated county-year dataset passed completeness and uniqueness checks.
+Hazard distributions,Hazard and loss variables are right-skewed and contain meaningful extremes.
+Severity,The 80th-percentile rule provides a transparent high-severity classification target.
+Socioeconomic context,Socioeconomic variables vary substantially and should be tested through moderation models.
+Correlations,Correlation and VIF tables provide diagnostics for later regression specification.
+Trend analysis,Annual patterns are exploratory and require formal Mann-Kendall and ARIMA analysis.
+Machine learning,The baseline model demonstrates predictive signal but is not a final tuned model.

@@ -1,0 +1,11 @@
+Variable,VIF
+housing_age_median_years,7.056021228490274
+pct_units_pre1980,6.560361962183393
+population_density_per_sq_mi,1.6695912063271638
+wind_speed_mph,1.3545781819803362
+hail_size_inches,1.270963435776593
+flood_depth_feet,1.2594288688982693
+median_income_usd,1.1144633936072479
+storm_duration_hours,1.0634322735010662
+vacancy_rate_pct,1.015596821492731
+homeownership_rate_pct,1.0111220623172

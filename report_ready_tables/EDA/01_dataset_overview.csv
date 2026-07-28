@@ -1,0 +1,8 @@
+Metric,Value
+Rows,903
+Columns,40
+Minimum year,2000
+Maximum year,2023
+Unique counties,50
+Missing values,0
+Duplicate county-year keys,0
