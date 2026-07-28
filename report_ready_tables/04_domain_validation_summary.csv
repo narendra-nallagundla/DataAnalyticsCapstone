@@ -1,0 +1,16 @@
+Dataset,Variable,Lower Bound,Upper Bound,Invalid Values
+NOAA,wind_speed_mph,0,No fixed maximum,0
+NOAA,hail_size_inches,0,No fixed maximum,0
+NOAA,flood_depth_feet,0,No fixed maximum,0
+NOAA,storm_duration_hours,0,No fixed maximum,0
+NOAA,property_damage_usd,0,No fixed maximum,0
+ACS,median_income_usd,0,No fixed maximum,0
+ACS,population_density_per_sq_mi,0,No fixed maximum,0
+ACS,housing_age_median_years,0,No fixed maximum,0
+ACS,vacancy_rate_pct,0,100,0
+ACS,homeownership_rate_pct,0,100,0
+ACS,pct_units_pre1980,0,100,0
+NFIP,nfip_claim_count,0,No fixed maximum,0
+NFIP,avg_building_payout_usd,0,No fixed maximum,0
+NFIP,avg_contents_payout_usd,0,No fixed maximum,0
+NFIP,total_nfip_payout_usd,0,No fixed maximum,0

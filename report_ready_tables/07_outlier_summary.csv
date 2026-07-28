@@ -1,0 +1,10 @@
+Variable,Q1,Q3,IQR,Lower Fence,Upper Fence,Outlier Count,Outlier Percentage,Treatment
+wind_speed_mph,58.349999999999994,103.45,45.10000000000001,-9.300000000000011,171.10000000000002,4,0.44,Retained and flagged
+hail_size_inches,0.0,1.435,1.435,-2.1525,3.5875,9,1.0,Retained and flagged
+flood_depth_feet,0.0,0.0,0.0,0.0,0.0,164,18.16,Retained and flagged
+storm_duration_hours,4.8,11.1,6.3,-4.6499999999999995,20.549999999999997,25,2.77,Retained and flagged
+property_damage_usd,19463.0,109587.5,90124.5,-115723.75,244774.25,78,8.64,Retained and flagged
+nfip_claim_count,14.0,57.0,43.0,-50.5,121.5,83,9.19,Retained and flagged
+total_nfip_payout_usd,585522.0,3619750.0,3034228.0,-3965820.0,8171092.0,75,8.31,Retained and flagged
+median_income_usd,62880.5,83312.0,20431.5,32233.25,113959.25,56,6.2,Retained and flagged
+population_density_per_sq_mi,656.5,2440.0,1783.5,-2018.75,5115.25,90,9.97,Retained and flagged

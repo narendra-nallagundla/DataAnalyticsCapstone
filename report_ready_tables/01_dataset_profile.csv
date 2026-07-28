@@ -1,0 +1,4 @@
+Dataset,Rows,Columns,Missing Values,Exact Duplicate Rows,Minimum Year,Maximum Year,Unique Counties
+NOAA Storm Events,1200,11,0,0,2000,2023,50
+Census ACS,1200,11,0,0,2000,2023,50
+FEMA/NFIP,1199,8,0,0,2000,2023,50

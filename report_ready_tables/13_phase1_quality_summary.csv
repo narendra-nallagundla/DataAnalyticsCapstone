@@ -1,0 +1,16 @@
+Metric,Value
+Raw NOAA rows,1200.0
+NOAA county-year rows after aggregation,903.0
+Raw ACS rows,1200.0
+Raw NFIP rows,1199.0
+Final cleaned rows,903.0
+Final columns,40.0
+Minimum year,2000.0
+Maximum year,2023.0
+Unique counties,50.0
+Final missing values,0.0
+Duplicate county-year keys,0.0
+Unmatched ACS county-years,0.0
+Unmatched NFIP county-years,1.0
+High-severity threshold,0.469292
+High-severity observations,181.0

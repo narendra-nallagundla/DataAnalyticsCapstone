@@ -1,0 +1,41 @@
+Variable Name,Definition,Data Type,Allowed Values / Observed Range,Source,Missing Values Handling,RQ / Intended Use,Notes
+year,Calendar year of the hazard event and matched county-year observations,Integer,2000 to 2023,All,No missing values in the final dataset,RQ1–RQ4,
+state,Two-letter U.S. state abbreviation,Categorical/Text,"AL, AR, AZ, CA, CO, FL, GA, IA…",NOAA,No missing values in the final dataset,Grouping and descriptive analysis,
+county_fips,Five-digit county Federal Information Processing Standards code,Categorical/Text,"Five-character code, including leading zeros",All,No missing values in the final dataset,Primary merge key,
+county_name,County name,Categorical/Text,"Anoka, Bexar, Clark, Cook, Cuyahoga, Dallas, Davidson, Dekalb…",NOAA,No missing values in the final dataset,Grouping and descriptive analysis,
+hazard_event_count,Number of unique NOAA hazard events in the county-year,Integer,1 to 4,Engineered from NOAA,No missing values in the final dataset,Exposure/control,
+event_type_count,Number of distinct NOAA event types in the county-year,Integer,1 to 3,Engineered from NOAA,No missing values in the final dataset,Exposure/control,
+dominant_event_type,Most frequently occurring NOAA event type in the county-year,Categorical/Text,"Flash Flood, Hail, Hurricane (Typhoon), Thunderstorm Wind, Tornado, Wildfire, Winter Storm",Engineered from NOAA,No missing values in the final dataset,EDA and segmentation,
+wind_speed_mph,Maximum recorded wind speed in the county-year,Numeric (decimal),0 to 214.8,NOAA,No missing values in the final dataset,"RQ1, RQ2, and RQ3",
+hail_size_inches,Maximum recorded hail diameter in the county-year,Numeric (decimal),0 to 4.29,NOAA,No missing values in the final dataset,"RQ1, RQ2, and RQ3",
+flood_depth_feet,Maximum recorded flood depth in the county-year,Numeric (decimal),0 to 5.79,NOAA,No missing values in the final dataset,"RQ1, RQ2, and RQ3",
+storm_duration_hours,Total duration of NOAA events in the county-year,Numeric (decimal),0.5 to 29.4,Engineered from NOAA,No missing values in the final dataset,"RQ1, RQ2, and RQ3",
+property_damage_usd,Total NOAA-reported property damage in the county-year,Integer,0 to 1.741e+06,Engineered from NOAA,No missing values in the final dataset,Severity construction,
+nfip_claim_count,Number of NFIP claims in the county-year,Numeric (decimal),0 to 794,NFIP,No missing values in the final dataset,Exposure and descriptive analysis,
+avg_building_payout_usd,Average NFIP building payout,Numeric (decimal),0 to 5.465e+05,NFIP,No missing values in the final dataset,EDA and controls,
+avg_contents_payout_usd,Average NFIP contents payout,Numeric (decimal),0 to 7.075e+04,NFIP,No missing values in the final dataset,EDA and controls,
+total_nfip_payout_usd,Total NFIP payout in the county-year,Numeric (decimal),0 to 1.575e+08,NFIP,No missing values in the final dataset,Severity construction,
+nfip_record_available,1 if an NFIP record matched the county-year; otherwise 0,Integer,0 or 1,Engineered,No missing values in the final dataset,Merge-quality indicator,
+median_income_usd,Median household income,Integer,3.916e+04 to 1.836e+05,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+population_density_per_sq_mi,Population per square mile,Integer,278 to 1.317e+04,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+housing_age_median_years,Median age of housing units,Integer,22 to 78,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+construction_type,Predominant construction category in the supplied ACS dataset,Categorical/Text,"masonry, wood",Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+vacancy_rate_pct,Vacant housing units as a percentage,Numeric (decimal),0–100,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+homeownership_rate_pct,Owner-occupied housing units as a percentage,Numeric (decimal),0–100,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+pct_units_pre1980,Housing units constructed before 1980 as a percentage,Numeric (decimal),20.2 to 95,Census ACS,No missing values in the final dataset,RQ2 and RQ3,
+total_observed_loss_usd,NOAA property damage plus total NFIP payout,Numeric (decimal),1.528e+04 to 1.576e+08,Engineered,No missing values in the final dataset,Financial severity context,
+log_property_damage,Natural logarithm of one plus NOAA property damage,Numeric (decimal),0 to 14.37,Engineered,No missing values in the final dataset,Modeling transformation,
+log_total_nfip_payout,Natural logarithm of one plus total NFIP payout,Numeric (decimal),0 to 18.87,Engineered,No missing values in the final dataset,Modeling transformation,
+log_total_observed_loss,Natural logarithm of one plus total observed loss,Numeric (decimal),9.634 to 18.88,Engineered,No missing values in the final dataset,Modeling transformation,
+severity_metric,Mean of six min-max normalized hazard and loss components,Numeric (decimal),0.1389 to 0.6546,Engineered,No missing values in the final dataset,"Continuous target for RQ1, RQ2, and RQ4",
+high_severity_flag,1 for observations at or above the 80th percentile of severity_metric,Integer,0 or 1,Engineered,No missing values in the final dataset,Binary target for RQ3,
+socioeconomic_resilience_index,"Exploratory standardized index combining income, homeownership, housing age, vacancy, and pre-1980 housing share",Numeric (decimal),-1.362 to 1.495,Engineered,No missing values in the final dataset,RQ2 and exploratory EDA,
+wind_speed_mph_outlier_flag,Indicator equal to 1 when wind_speed_mph falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+hail_size_inches_outlier_flag,Indicator equal to 1 when hail_size_inches falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+flood_depth_feet_outlier_flag,Indicator equal to 1 when flood_depth_feet falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+storm_duration_hours_outlier_flag,Indicator equal to 1 when storm_duration_hours falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+property_damage_usd_outlier_flag,Indicator equal to 1 when property_damage_usd falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+nfip_claim_count_outlier_flag,Indicator equal to 1 when nfip_claim_count falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+total_nfip_payout_usd_outlier_flag,Indicator equal to 1 when total_nfip_payout_usd falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+median_income_usd_outlier_flag,Indicator equal to 1 when median_income_usd falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks
+population_density_per_sq_mi_outlier_flag,Indicator equal to 1 when population_density_per_sq_mi falls outside the 1.5 × IQR fences,Integer,0 or 1,Engineered,No missing values in the final dataset,Sensitivity analysis,Extreme observation retained; flag supports sensitivity checks

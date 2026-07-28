@@ -1,0 +1,8 @@
+Derived Variable,Formula / Rule,Purpose
+total_observed_loss_usd,property_damage_usd + total_nfip_payout_usd,Combined financial-impact measure
+log_property_damage,ln(1 + property_damage_usd),Reduce right skew for modeling
+log_total_nfip_payout,ln(1 + total_nfip_payout_usd),Reduce right skew for modeling
+log_total_observed_loss,ln(1 + total_observed_loss_usd),Combined transformed loss measure
+severity_metric,Mean of six min-max normalized hazard/loss components,"Continuous severity target for RQ1, RQ2, and RQ4"
+high_severity_flag,1 when severity_metric ≥ 80th percentile (0.469292),Binary classification target for RQ3
+socioeconomic_resilience_index,Average of standardized protective factors minus standardized vulnerability factors,Exploratory socioeconomic moderator

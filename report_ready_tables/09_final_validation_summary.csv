@@ -1,0 +1,6 @@
+Validation Check,Result,Expected,Status
+No duplicate county-year keys,0,0,Pass
+No missing values in final dataset,0,0,Pass
+All FIPS codes contain five characters,903,903,Pass
+Severity metric is between 0 and 1,903,903,Pass
+High-severity flag contains only 0 or 1,"[0, 1]","[0, 1]",Pass
