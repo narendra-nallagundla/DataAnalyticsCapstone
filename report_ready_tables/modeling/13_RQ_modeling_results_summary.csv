@@ -1,0 +1,5 @@
+RQ,Hypothesis focus,Current decision,Key evidence
+RQ1,Hazard variables jointly predict financial severity,Reject H0,Robust F p=7.06e-20; adj. R²=0.069
+RQ2,Socioeconomic moderation exists,Reject H0,Smallest adjusted interaction p=0.000135; Bonferroni alpha=.0125
+RQ3,Leakage-safe ensemble classification exceeds random,Pending formal CI in 04_Evaluation.ipynb,Best ensemble=Random Forest; temporal-holdout AUC=0.611
+RQ4,Financial severity increased over time,Fail to reject H0,MK p=0.442; Sen slope=0.0056/year

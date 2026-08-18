@@ -1,0 +1,3 @@
+Specification,Target,Predictor design,ROC_AUC,Interpretation
+Invalid/leaky interim specification,Interim high_severity_flag,Includes variables used to construct target,0.9891762452107279,Not valid for final inference
+Final leakage-safe specification,High financial severity flag,Excludes all direct/derived loss variables,0.6108891108891109,Valid temporal-holdout estimate

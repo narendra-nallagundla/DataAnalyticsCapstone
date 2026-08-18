@@ -1,0 +1,5 @@
+RQ,Hypothesis decision,Quantitative evidence,Reliability / interpretation caveat
+RQ1,Reject H0,Adj. R²=0.069; robust F p=7.1e-20; wind p=0.000165; flood depth p=2.3e-09,Integrated county-year financial severity proxy; not event-level claim severity.
+RQ2,Reject H0,Strongest interaction: median_income_usd; coef=-0.318; Bonferroni p=0.0005418,County-year ecological moderation; not causal.
+RQ3,Reject H0,Best ensemble: Random Forest; AUC=0.611 (95% CI 0.501–0.712); F1=0.379,Strict temporal holdout and leakage exclusion intentionally reduce optimistic performance.
+RQ4,Fail to reject H0,MK p=0.442; tau=0.116; Sen slope=0.0056/year (95% CI -0.0073–0.0174); ARIMA holdout RMSE=0.296,Only 24 annual points; limited power for small trends.

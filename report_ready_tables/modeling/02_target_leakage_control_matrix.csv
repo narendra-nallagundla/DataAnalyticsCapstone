@@ -1,0 +1,12 @@
+Field,Role,Leakage concern,Final treatment
+severity_metric,Interim target,"Constructed from wind, hail, flood, duration, NOAA damage, NFIP payout",Do not use as final RQ3 target
+high_severity_flag,Interim classification target,Derived from severity_metric,Do not use as final RQ3 target
+property_damage_usd,Loss component,Direct component of final financial target,Excluded from RQ3 predictors
+total_nfip_payout_usd,Loss component,Direct component of final financial target,Excluded from RQ3 predictors
+total_observed_loss_usd,Final target precursor,Direct precursor of financial_severity_log,Excluded from RQ3 predictors
+log_property_damage,Transformed loss,Derived from target component,Excluded from RQ3 predictors
+log_total_nfip_payout,Transformed loss,Derived from target component,Excluded from RQ3 predictors
+log_total_observed_loss,Equivalent target transform,Equivalent to financial_severity_log,Excluded from RQ3 predictors
+nfip_claim_count,Post-event claims information,Can encode loss realization and claim activity,Excluded from RQ3 predictors
+avg_building_payout_usd,Post-event claims information,Direct insurance payment information,Excluded from RQ3 predictors
+avg_contents_payout_usd,Post-event claims information,Direct insurance payment information,Excluded from RQ3 predictors

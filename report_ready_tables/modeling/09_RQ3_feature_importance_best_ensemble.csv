@@ -1,0 +1,54 @@
+Feature,Importance
+num__wind_speed_mph,0.10880885828343309
+num__median_income_usd,0.09599827555046479
+num__population_density_per_sq_mi,0.09168447605799293
+num__storm_duration_hours,0.08644711064454616
+num__pct_units_pre1980,0.07163371749535188
+num__vacancy_rate_pct,0.0702881137983525
+num__homeownership_rate_pct,0.06798970599472975
+num__flood_depth_feet,0.06573913139690674
+num__housing_age_median_years,0.05806808430940386
+num__hail_size_inches,0.04084825657187385
+cat__state_FL,0.022009222127797875
+cat__state_TN,0.020302794882825905
+cat__state_LA,0.018751928340756212
+num__hazard_event_count,0.012669298186483987
+cat__dominant_event_type_Flash Flood,0.010610598973171131
+cat__construction_type_wood,0.010501109316431218
+cat__dominant_event_type_Tornado,0.01032313155420003
+cat__construction_type_masonry,0.009163245333421827
+cat__state_IA,0.008176518088692825
+cat__dominant_event_type_Thunderstorm Wind,0.007514054664183874
+cat__state_CA,0.0072625809739110935
+num__event_type_count,0.007186734057348964
+cat__dominant_event_type_Hail,0.006708557444894711
+cat__state_IN,0.006674025202831312
+cat__dominant_event_type_Winter Storm,0.006628491753935622
+cat__state_MN,0.006328379975915793
+cat__state_KS,0.005130219346812239
+cat__state_AL,0.00483285387770248
+cat__state_NJ,0.004797793068506472
+cat__state_NC,0.004546105766504334
+cat__state_TX,0.003955848858238248
+cat__state_OK,0.0034183175907468604
+cat__state_OH,0.0033285630649334806
+cat__state_MI,0.0032597171111072385
+cat__state_AR,0.0029899589393860572
+cat__state_AZ,0.002873951527656675
+cat__state_NV,0.002614218031983864
+cat__state_OR,0.002605524340846012
+cat__dominant_event_type_Hurricane (Typhoon),0.002531733101499652
+cat__state_MO,0.0023347812293104606
+cat__state_CO,0.002259713142268029
+cat__state_WA,0.0021500303807724724
+cat__state_PA,0.002104605873369605
+cat__state_UT,0.0020377480251504427
+cat__state_WI,0.0019907744576855373
+cat__state_SC,0.0019752921003857336
+cat__state_VA,0.0019345251619701934
+cat__state_MS,0.0018122073414161854
+cat__state_NE,0.001680359531000277
+cat__state_NY,0.0015047641373901132
+cat__state_IL,0.0015014603679606691
+cat__state_GA,0.0014181339576870868
+cat__dominant_event_type_Wildfire,9.43986878516315e-05

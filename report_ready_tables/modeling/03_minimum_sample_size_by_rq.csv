@@ -1,0 +1,5 @@
+RQ,Method,Planning assumptions,Minimum N,Available N,Assessment
+RQ1,Multiple linear regression,"Cohen f²=0.15 (medium), 4 tested hazard predictors, alpha=.05, power=.80",85,903,Adequate
+RQ2,Moderated regression / incremental interactions,"Cohen f²=0.02 (small), 4 tested interaction terms, alpha=.05, power=.80",602,903,Adequate
+RQ3,Binary classification prevalence precision,"p=.20 high severity, 95% CI, ±.05 absolute margin",246,903,Adequate
+RQ4,Mann–Kendall trend (normal approximation),"Detectable Kendall tau=.50, two-sided alpha=.05, power=.80",18,24,Adequate for a large monotonic trend; limited for smaller trends
